@@ -47,8 +47,9 @@ p {
 }
 
 .text-faded {
-    color: fade(white, 70%);
+    color: darken(@theme-primary, 10%);
 }
+
 
 section {
     padding: 100px 0;
@@ -187,7 +188,7 @@ header {
             p {
                 font-weight: 300;
                 color: #231903;
-                font-size: 24px;
+                font-size: 30px;
                 margin-bottom: 50px;
             }
         }
@@ -225,14 +226,18 @@ header {
     margin-top: 0;
 }
 
+#product {
+    height: 100%;
+}
+
 .service-box {
     max-width: 400px;
-    margin: 50px auto 0;
+    margin: 80px auto 15px;
     @media (min-width: 992px) {
         margin: 20px auto 0;
     }
     p {
-        margin-bottom: 0;
+        margin-bottom:30px;
     }
 }
 
