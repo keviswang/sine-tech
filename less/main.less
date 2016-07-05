@@ -16,10 +16,16 @@ hr {
     border-color: @theme-primary;
     border-width: 3px;
     max-width: 50px;
-}
 
-hr.light {
-    border-color: white;
+    &.light {
+        border-color: white;
+    }
+
+    &.section-heading-spacer {
+        float: left;
+        width: 300px;
+        border-top: 3px solid @theme-primary;
+    }
 }
 
 a {
@@ -35,6 +41,12 @@ p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
+
+    .lead {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
 }
 
 .bg-primary {
@@ -68,6 +80,19 @@ section {
             background-color: rgba(255,255,255,0.8);
         }
     }
+}
+
+#product1,
+#product3 {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+#product2,
+#product4 {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
 }
 
 .no-padding {
